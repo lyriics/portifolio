@@ -79,6 +79,7 @@ h2 {
 .ctt {
   width: 20px;
   height: auto;
+  text-decoration: none;
 }
 
 a {
@@ -119,3 +120,4 @@ a:hover {
     text-align: center;
     padding: 30px;
   }
+
