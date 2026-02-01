@@ -20,7 +20,7 @@ div img {
 .texto {
   max-width: 90%;
   font-size: 16px;
-  margin-left: 100px;
+  margin: 0 auto;
   padding: 20px;
   text-align: left;
   color: white;
@@ -59,12 +59,12 @@ p {
 
 footer {
   margin-top: 150px;
-  height: 200px;
+  height: auto;
+  min-height: 200px;
   width: 100%;
   background-color: #aec6cf;
-  box-shadow: inset;
   font-family: Arial, Helvetica, sans-serif;
-  align-items: left;
+  align-items: center;
   padding: 50px;
   border-radius: 4px;
   box-sizing: border-box;
@@ -98,3 +98,24 @@ a:hover {
   height: auto;
   margin-right: 100px;
 }
+
+@media (max-width: 768px) {
+  .texto {
+    margin-left: 20px;
+    max-width: 95%;
+  }
+
+  h1,
+  span {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
