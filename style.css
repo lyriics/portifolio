@@ -155,15 +155,12 @@ a:hover {
 .menu-btn {
   cursor: pointer;
   position: fixed;
-  width: 40px;
-  height: auto;
   right: 20px;
-  top: 30px;
+  top: 20px;
   z-index: 1001;
 }
-.bar1,
-.bar2,
-.bar3 {
+
+.bar1, .bar2, .bar3 {
   width: 35px;
   height: 4px;
   background-color: #2f4f4f;
@@ -171,12 +168,15 @@ a:hover {
   transition: 0.4s;
   border-radius: 2px;
 }
+
 .change .bar1 {
   transform: rotate(-45deg) translate(-7px, 6px);
 }
+
 .change .bar2 {
   opacity: 0;
 }
+
 .change .bar3 {
   transform: rotate(45deg) translate(-7px, -6px);
 }
