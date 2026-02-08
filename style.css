@@ -89,7 +89,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+.ctt:hover {
   color: #3d6b6b;
   text-decoration: underline;
   transition: 0.3s;
@@ -135,6 +135,7 @@ a:hover {
 
 .sidebar {
   height: 100%;
+  text-decoration: none;
   width: 0;
   position: fixed;
   top: 0;
@@ -160,7 +161,9 @@ a:hover {
   z-index: 1001;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 35px;
   height: 4px;
   background-color: #2f4f4f;
@@ -179,4 +182,16 @@ a:hover {
 
 .change .bar3 {
   transform: rotate(45deg) translate(-7px, -6px);
+}
+
+.diplomas {
+  background-color: #aec6cf;
+  color: #000;
+  width: 1000px;
+  height: auto;
+  margin-top: 20px;
+  text-align: left;
+  padding: 20px;
+  border-radius: 4px;
+  border-bottom: #fff solid 4px;
 }
