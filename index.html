@@ -10,8 +10,24 @@
 </head>
 
 <body>
-  <div><img src="logowill.png" alt="logo">
+  <div>
+    <a href="index.html">
+      <img src="logowill.png" alt="logo">
+    </a>
   </div>
+
+  <div class="menu-btn" onclick="toggleSidebar(this)">
+     <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div><div class="bar1"></div>
+   
+
+  <div id="mySidebar" class="sidebar">
+    <a href="sobremim.html">Sobre mim</a>
+    <a href="formacao.html">Minha formação</a>
+    <a href="contato.html">Me conheça</a>
+  </div>
+  
   <div class="texto">
     <h1>Olá, me chamo <span>William</span></h1>
     <p>Sou estudante de Análise e Desenvolvimento de Software, atualmente em fase inicial da minha jornada na programação. Tenho interesse tanto em front-end quanto em back-end, explorando diferentes linguagens e tecnologias para construir soluções completas e funcionais.</p>
@@ -21,6 +37,19 @@
     <p>Se quiser trocar ideias, compartilhar experiências ou até mesmo propor projetos, será um prazer conversar!
     </p>
   </div>
+
+<script>
+    function toggleSidebar(x) {
+      x.classList.toggle("change")
+      let sidebar = document.getElementById("mySidebar")
+      if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0"
+      } else {
+        sidebar.style.width = "250px"
+      }
+    }
+  </script>
+  
 </body>
 
 <footer>
@@ -36,5 +65,6 @@
 
 
 </html>
+
 
 
