@@ -168,5 +168,35 @@ a {
 
 h1 {
   font-size: 38px;
+  color: #000;
+  margin: 0;
+}
+
+h2 {
+  font-size: 24px;
   color: #2f4f4f;
+}
+
+span {
+  font-size: 24px;
+  color: #036;
+}
+
+h3 {
+  font-size: 20px;
+  color: #808080;
+}
+
+.icone {
+  width: 34px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h1 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding-left: 10px;
 }
