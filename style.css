@@ -15,6 +15,7 @@ div img {
   margin-top: 10px;
   width: 100px;
   height: auto;
+  cursor: pointer;
 }
 
 .texto {
@@ -64,13 +65,14 @@ footer {
   width: 100%;
   background-color: #aec6cf;
   font-family: Arial, Helvetica, sans-serif;
-  align-items: center;
   padding: 50px;
   border-radius: 4px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+
 .ctt,
 h2 {
   margin-left: 20px;
@@ -79,7 +81,6 @@ h2 {
 .ctt {
   width: 20px;
   height: auto;
-  text-decoration: none;
 }
 
 a {
@@ -121,3 +122,61 @@ a:hover {
     padding: 30px;
   }
 
+  .will {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .ctt,
+  h2 {
+    margin-left: 0;
+  }
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 1000;
+}
+.sidebar a {
+  padding: 8px 32px;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.menu-btn {
+  cursor: pointer;
+  position: fixed;
+  width: 40px;
+  height: auto;
+  right: 20px;
+  top: 30px;
+  z-index: 1001;
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 4px;
+  background-color: #2f4f4f;
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 2px;
+}
+.change .bar1 {
+  transform: rotate(-45deg) translate(-7px, 6px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  transform: rotate(45deg) translate(-7px, -6px);
+}
