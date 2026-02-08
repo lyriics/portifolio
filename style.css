@@ -183,15 +183,3 @@ a {
 .change .bar3 {
   transform: rotate(45deg) translate(-7px, -6px);
 }
-
-.diplomas {
-  background-color: #aec6cf;
-  color: #000;
-  width: 1000px;
-  height: auto;
-  margin-top: 20px;
-  text-align: left;
-  padding: 20px;
-  border-radius: 4px;
-  border-bottom: #fff solid 4px;
-}
