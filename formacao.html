@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formações</title>
+</head>
+
+<body>
+  <div>
+    <a href="index.html">
+      <img src="logowill.png" alt="logo">
+    </a>
+  </div>
+
+  <div class="menu-btn" onclick="toggleSidebar(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <div id="mySidebar" class="sidebar">
+    <a href="sobremim.html">Sobre mim</a>
+    <a href="formacao.html">Minha formação</a>
+    <a href="contato.html">Me conheça</a>
+  </div>
+
+  <div class="texto">
+    <h1>Formações</h1>
+    <div class="diplomas">
+      <h2 class="tipocurso">Ensino médio</h2>
+      <h3 class="instituicao">Instituto Estadual de Educação Princesa Isabel</h3>
+    </div>
+
+
+    <div class="diplomas">
+      <h2 class="tipocurso">Técnico em Mecatrônica</h2>
+      <h3 class="instituicao">SENAI Gravataí</h3>
+    </div>
+
+    <div class="diplomas">
+      <h2 class="tipocurso">Análise e desenvolvimento de software</h2>
+      <h3 class="instituicao">Cesuca Centro Universitário</h3>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleSidebar(x) {
+      x.classList.toggle("change")
+      let sidebar = document.getElementById("mySidebar")
+      if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0"
+      } else {
+        sidebar.style.width = "250px"
+      }
+    }
+  </script>
+</body>
+<footer>
+  <div class="contatos-bloco">
+    <h2>Contato:</h2>
+    <a><img class="ctt" src="email.png" alt="email"> williamsp.contato@gmail.com</a><br>
+    <a href="https://www.instagram.com/wii.pereira/"><img class="ctt" src="instagramlogo.png" alt="instagram"> wii.pereira</a>
+    <a href="https://github.com/lyriics"><img class="ctt" src="githublogo.png" alt="github"> lyriics</a>
+  </div>
+  <img class="will" src="logo will2.png" alt="will">
+</footer>
+
+</html>
