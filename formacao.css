@@ -1,0 +1,172 @@
+body {
+  background-color: #d6d6d6;
+  font-family: Helvetica, sans-serif;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.texto {
+  max-width: 90%;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  color: white;
+  word-wrap: break-word;
+}
+
+div {
+  text-align: left;
+}
+
+div img {
+  margin-top: 10px;
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 150px;
+  height: auto;
+  min-height: 200px;
+  width: 100%;
+  background-color: #aec6cf;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ctt,
+h2 {
+  margin-left: 20px;
+}
+
+.ctt {
+  width: 20px;
+  height: auto;
+}
+
+a {
+  font-size: 20px;
+  color: #2f4f4f;
+  text-decoration: none;
+}
+
+.ctt:hover {
+  color: #3d6b6b;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.will {
+  width: 150px;
+  height: auto;
+  margin-right: 100px;
+}
+
+@media (max-width: 768px) {
+  .texto {
+    margin-left: 20px;
+    max-width: 95%;
+  }
+
+  h1,
+  span {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .will {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .ctt,
+  h2 {
+    margin-left: 0;
+  }
+}
+
+.sidebar {
+  height: 100%;
+  text-decoration: none;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 1000;
+}
+.sidebar a {
+  padding: 8px 32px;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.menu-btn {
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 1001;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 4px;
+  background-color: #2f4f4f;
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 2px;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-7px, -6px);
+}
+
+.diplomas {
+  background-color: #aec6cf;
+  color: #000;
+  width: 1000px;
+  height: auto;
+  margin-top: 20px;
+  text-align: left;
+  padding: 20px;
+  border-radius: 4px;
+  border-bottom: #fff solid 4px;
+}
+
+h1 {
+  font-size: 38px;
+  color: #2f4f4f;
+}
